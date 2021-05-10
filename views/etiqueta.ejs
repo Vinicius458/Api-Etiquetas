@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiqueta</title>
+    <style>
+		body{margin: 3px;}
+        .card {width: 370px; height: 188px; float: left; border-style: double; border-width: 3px;}
+		#data-hora { width: 250px; height: 35px; float: left; font-size: 30px; text-align: left; }
+        .informacoes-andar{ width: 365px; height: 40px; float: left; margin-left: 5px; font-size: 18px;  }
+        .nome-visitante{ width: 370px; height: 35px; float: left; font-size: 20px; text-align: center; margin-top: 10px; }
+        .aviso{ width: 370px; height: 23px; float: left; color: white; font-size: 18px; text-align: center; margin-top: 0px; background-color: black;}
+        #digito-andar {width: 45px; height: 80px; float: left; font-size: 16px; text-align: right; font-size: 70px; }
+		#grau { width: 75px; height: 45px;  float: left;  font-size: 70px; }
+        #andar { width: 73px; height: 30px; float: left; font-size: 16px; margin-top: 5px;  margin-left: 2px; }
+     	.visitante { width: 250px; height: 45px; float: left; background-color: black; text-align: center; color: white; font-size: 35px; } 
+        .hora { float: right; margin-right: 5px; }
+        .formatacao-etiqueta{font-family: Arial, Helvetica, sans-serif;}
+    </style>
+</head>
+
+<body>
+    <div class="card formatacao-etiqueta">
+        <div id="digito-andar">
+            <b><%=andar%></b><!--  -->
+        </div>
+
+        <div id="grau">
+            <b>º</b>
+        </div>
+        
+        <div class="visitante">VISITANTE</div>
+
+        <div id="andar">
+            <b>ANDAR</b>
+        </div>
+
+        
+
+        <div id="data-hora">
+            <b>  <%=data %></b><b class="hora"><%=hr_chegada %> </b><br> <!--   -->
+        </div>
+
+        <div class="informacoes-andar">
+            Dpto.: <b> <%=dpto %> </b><br> <!--  -->
+            Contato: <b> <%=contato %> </b><br> <!--  -->
+        </div>
+
+        <div class="nome-visitante">
+            <b> <%=nome%></b><br> <!--   -->
+        </div>
+
+        <div class="aviso">
+            <b>Obrigatório apresentar etiqueta na saída</b>
+        </div>
+    </div>
+</body>
+
+</html>
